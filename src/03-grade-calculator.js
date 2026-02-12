@@ -34,6 +34,19 @@ export function calculateGrade(score, hasExtraCredit) {
     score = Math.min(score + 5, 100);
   }
 
+  // if (hasExtraCredit) {
+  //   if (score <= 95) {
+  //     bonus = 5;
+  //   }
+  //   if (score == 96) bonus = 4;
+  //   if (score == 97) bonus = 3;
+  //   if (score == 98) bonus = 2;
+  //   if (score == 99) bonus = 1;
+  //   if (score == 100) bonus = 0;
+
+  //   score = bonus + score;
+  // }
+
   if (score >= 90 && score <= 100) return "A";
   if (score >= 80 && score <= 89) return "B";
   if (score >= 70 && score <= 79) return "C";
